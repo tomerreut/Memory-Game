@@ -83,9 +83,9 @@ function game() {
             if(clickCell == 1) {
                 startTimer()
             }
-        }//onclick
-    }//for
-}//game
+        }
+    }
+}
 
 function startTimer() {
     startTime = Date.now();
