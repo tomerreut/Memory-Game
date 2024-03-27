@@ -28,10 +28,10 @@ function game() {
     for(let i=0; i<16; i++) {
         cardsList.push(document.createElement('div'));
         cardsList[i].className = 'cell';
-        divBoard.appendChild(cardsList[i]);//makes the board 
-        const randomIndex = Math.floor(Math.random() * numbers.length);//גורם לעירבוב בקלפים
-        const card = numbers[randomIndex];//גורם לעירבוב בקלפים
-        numbers.splice(randomIndex, 1);//גורם לעירבוב בקלפים
+        divBoard.appendChild(cardsList[i]); 
+        const randomIndex = Math.floor(Math.random() * numbers.length);
+        const card = numbers[randomIndex];
+        numbers.splice(randomIndex, 1);
         imgList.push(document.createElement('img'));
         imgList[i].src = "images/num-"+card+".jpg";
         
